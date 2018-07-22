@@ -23,9 +23,9 @@ services:
     environment:
       - VIRTUAL_PORT=8069
 #     - HTTPS_METHOD=nohttps
-      - VIRTUAL_HOST=cajchan.dravom.cz
-      - LETSENCRYPT_HOST=cajchan.dravom.cz
-      - LETSENCRYPT_EMAIL=milda.dvorak@gmail.com
+      - VIRTUAL_HOST=www.cajchan.cz, cajchan.cz
+      - LETSENCRYPT_HOST=www.cajchan.cz, cajchan.cz
+      - LETSENCRYPT_EMAIL=cajovna@cajchan.cz
     volumes:
       - ./o_addons:/mnt/extra-addons
       - ./o_etc:/etc/odoo
